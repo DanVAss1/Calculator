@@ -4,22 +4,30 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         System.out.println("Welcome to the calculator");
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        System.out.println("Your two random numbers are");
 
         Random random = new Random();
         int randomNumber = random.nextInt(100);
 
+        int first = random.nextInt(100);
+        int second = random.nextInt(100);
+
+        System.out.println(first);
+        System.out.println(second);
+
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+
         if(input.equals("+")){
-            int sum = randomNumber + randomNumber;
+            int sum = first + second;
             System.out.println(sum);
         }
         if(input.equals("-")){
-            int sum = randomNumber - randomNumber;
+            int sum = first - second;
             System.out.println(sum);
         }
         if(input.equals("*")){
-            int sum = randomNumber * randomNumber;
+            int sum = first * second;
             System.out.println(sum);
         }
 
