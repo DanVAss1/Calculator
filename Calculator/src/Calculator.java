@@ -15,6 +15,7 @@ public class Calculator {
         System.out.println(first);
         System.out.println(second);
 
+        System.out.println("Press the oporator you would like to use, i.e. + - *");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
 
