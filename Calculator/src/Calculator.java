@@ -1,36 +1,35 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+
         System.out.println("Welcome to the calculator");
-        System.out.println("Your two random numbers are");
+        System.out.println("What would you like your first number to be?");
 
-        Random random = new Random();
-        int randomNumber = random.nextInt(100);
-
-        int first = random.nextInt(100);
-        int second = random.nextInt(100);
-
-        System.out.println(first);
-        System.out.println(second);
-
-        System.out.println("Press the oporator you would like to use, i.e. + - *");
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
 
-        if(input.equals("+")){
+        int first = scanner.nextInt();
+        System.out.println("what would you like to do + , - , * ?");
+
+        String opp = scanner.next();
+        System.out.println("With what other number?");
+
+        int second = scanner.nextInt();
+
+        if(opp.equals("+")){
             int sum = first + second;
             System.out.println(sum);
         }
-        if(input.equals("-")){
+        if(opp.equals("-")){
             int sum = first - second;
             System.out.println(sum);
         }
-        if(input.equals("*")){
+        if(opp.equals("*")){
             int sum = first * second;
             System.out.println(sum);
         }
-
     }
-}
+    }
+
+
+
